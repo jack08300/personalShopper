@@ -1,8 +1,8 @@
 dataSource {
     pooled = true
     driverClassName = "com.mysql.jdbc.Driver"
-    username = "root"
-    password = ""
+    username = "jjtempc2"
+    password = "koe7POut"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -14,25 +14,25 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:mysql://localhost/personalShopper?useUnicode=yes&characterEncoding=UTF-8"
-            username = "root"
-            password = ""
+            url = "jdbc:mysql://jjtemp.com/jjtempc2_personalShopper?useUnicode=yes&characterEncoding=UTF-8"
+            username = "jjtempc2"
+            password = "koe7POut"
         }
     }
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/personalShopper?useUnicode=yes&characterEncoding=UTF-8"
-            username = "root"
-            password = ""
+            url = "jdbc:mysql://jjtemp.com/jjtempc2_personalShopper?useUnicode=yes&characterEncoding=UTF-8"
+            username = "jjtempc2"
+            password = "koe7POut"
         }
     }
     production {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:mysql://localhost/personalShopper?useUnicode=yes&characterEncoding=UTF-8"
-            username = "root"
-            password = ""
+            url = "jdbc:mysql://jjtemp.com/jjtempc2_personalShopper?useUnicode=yes&characterEncoding=UTF-8"
+            username = "jjtempc2"
+            password = "koe7POut"
             pooled = true
             properties {
                maxActive = -1

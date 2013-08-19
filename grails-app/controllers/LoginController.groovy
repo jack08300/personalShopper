@@ -11,6 +11,9 @@ import org.springframework.security.authentication.LockedException
 import org.springframework.security.core.context.SecurityContextHolder as SCH
 import org.springframework.security.web.WebAttributes
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
+import personalshopper.Role
+import personalshopper.SpUser
+import personalshopper.SpUserRole
 
 class LoginController {
 
@@ -116,6 +119,32 @@ class LoginController {
 			flash.message = msg
 			redirect action: 'auth', params: params
 		}
+	}
+
+	def register = {
+		String email = params.userEmail
+		String password = params.j_password
+		String userName = params.displayName
+		def userRole = Role.findByAuthority("ROLE_USER")
+
+		String msg = ""
+		def user = SpUser.findByEmail(email)
+		if(user != null) {
+			msg = "This EMAIL has been registered.<br/> If you are the email owner, please login."
+		}else{
+			user  = new SpUser(username: userName, enabled: true, password: password, email: email)
+			def role = new SpUserRole(spUser: user, role: userRole)
+
+			user.save(failOnError: true)
+			role.save(failOnError: true)
+
+			msg = "Registered Success<br/> Please Login"
+			
+		}
+
+		flash.message = msg
+		redirect action: 'auth', params: params
+
 	}
 
 	/**

@@ -112,7 +112,7 @@
 
 				<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
 					<p>
-						<label for='username'><g:message code="springSecurity.login.username.label"/>:</label>
+						<label for='username'>Email:</label>
 						<input type='text' class='text_' name='j_username' id='username'/>
 					</p>
 
@@ -145,7 +145,7 @@
 						<input type='email' class='text_' name='userEmail' id='userEmail'/>
 					</p>
 					<p>
-						<label for='displayName'>Display Name:</label>
+						<label for='displayName'>User Name:</label>
 						<input type='text' class='text_' name='displayName' id='displayName'/>
 					</p>
 
