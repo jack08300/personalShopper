@@ -8,10 +8,6 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.1;
 }
 
-h2 {
-	line-height: 3;
-}
-
 /* BASE LAYOUT */
 
 html {
@@ -597,23 +593,4 @@ th:hover, tr:hover {
 a.skip {
 	position: absolute;
 	left: -9999px;
-}
-
-.loginHeader {
-	position: relative;
-	margin-top: 30px;
-}
-
-.loginButton {
-	
-}
-
-.loginButton, .registerButton {
-	position: relative;
-	font-size: 26px;
-	line-height: 2px;
-	margin-right: 20px;
-	margin-left: 20px;
-	color: blue;
-	cursor: pointer;
 }
