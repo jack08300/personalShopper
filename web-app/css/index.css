@@ -1,0 +1,105 @@
+.indexBody{
+	padding: 10px;
+	text-align: center;
+	min-width: 700px;
+}
+.button {
+	border: none;
+	text-align: center;	
+	cursor: pointer;
+	
+}
+.roundedCorners{
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+.buttonShadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+.sectionTitle{
+	text-align: center;
+}
+.sectionTitle span.text{
+	font-size: 25px;
+	color: white;
+}
+.close{
+	clear: both;
+}
+#personalButton{
+	width: 350px;
+	float:left;
+}
+#createBuySection{
+	float: left;
+}
+#personalInforSection{
+	float :right;
+}
+#createBuySection .button,
+#personalInforSection .button {
+	width: 150px;
+	height: 70px;
+	border: none;
+	background-color: rgba(123, 104, 138, 0.7);
+}
+#createBuySection .text,
+#personalInforSection .text{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	line-height: 70px;
+}
+
+#personalInforSection .button {
+	background-color: rgba(24, 116, 205, 0.7);
+}
+
+#friendSection{
+	width:280px;
+	min-height: 200px;
+	background-color: rgba(125, 158, 192, 0.7);
+	border: 1px solid #C5C1AA;
+	float: right;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+#roomList{
+	width: 90%;
+	background-color: rgba(198,113,113, 0.7);
+	display: inline-block;
+}
+#roomList .roomCurrent .sectionTitle,
+#roomList .roomHistory .sectionTitle {
+	background-color: rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	width:50%;
+	margin-top: 10px;
+}
+
+#roomList .roomHistory .sectionTitle{
+	background-color: rgba(255, 248, 220, 0.2);
+}
+
+#roomSubButton{
+	
+}
+
+.subRoundedCorners{
+	background-color: rgb(255, 248, 220);
+	position: absolute;
+	width: 130px;
+	height: 50px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 50px;
+	-webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    //display: none;
+}

@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta name='layout' content='main'/>
-
+	
 	<title><g:message code="springSecurity.login.title"/></title>
 	<style type='text/css' media='screen'>
 	#login {
@@ -179,7 +179,6 @@
 				this.bindClickActions();
 			},
 			bindClickActions: function() {
-				console.log(switchButton);
 				switchButton.loginButton.click(function() {
 					$('.loginContent').show();
 					$('.registerContent').hide();
