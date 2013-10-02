@@ -22,7 +22,7 @@
 		
 		<div class="close"></div>
 	</div>
-	
+
 	<div id="friendSection" class="roundedCorners buttonShadow">
 		<div class="sectionTitle">
 			<span class="text">FRIENDS</span>
@@ -31,6 +31,7 @@
 			
 		</div>
 	</div>
+    <div class="friendFrame"></div>
 	<div class="close"></div>
 	
 	<div id="roomList" class="roundedCorners buttonShadow">
@@ -49,15 +50,14 @@
 </div>
 
 <div id="roomSubButton" >
-	<div class="subButton buttonShadow subRoundedCorners">For deliver</div>
-	<div class="subButton buttonShadow subRoundedCorners">For Buy</div>
+	<div class="subButton buttonShadow subRoundedCorners deliverButton">For deliver</div>
+	<div class="subButton buttonShadow subRoundedCorners buyButton">For Buy</div>
 </div>
 
-<div id="inforSubButton" >
-	<div class="subButton buttonShadow subRoundedCorners">test</div>
-	<div class="subButton buttonShadow subRoundedCorners">test 2</div>
-</div>
 
+<div id="popupWindowBackground">
+    <div class="closeButton">X</div>
+</div>
 
 <g:javascript src="index.js"/>
 </body>

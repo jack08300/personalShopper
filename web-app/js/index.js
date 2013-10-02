@@ -1,38 +1,35 @@
 
 createButtons = (function() {
-	var  buttons
-		,positionY
+	var  positionY
 		,positionX
-		,position
 		,subButton
 		,display = false
 		,duration = 400;
 	return {
-		init: function(buttons){
-            this.buttons = buttons;
-			for(var i=0;i<buttons.length;i++){
-				subButton =$("#"+buttons[i].attr("subButton"));
-				subButton.children(".subButton").each(function(){
-					$(this).css({
-						"top": buttons[i].position().top + buttons[i].height()/2,
-						"left": buttons[i].position().left
-					});
-				});
-				
-				buttons[i].click(function(){
-					subButton =$("#" + $(this).attr("subButton"));
+		init: function(button){
+		    subButton =$("#"+button.attr("subButton"));
+		    subButton.children(".subButton").each(function(){
+		    	$(this).css({
+		    		"top": button.position().top + button.height()/2,
+		    		"left": button.position().left
+		    	});
+		    });
 
-					if(display == true){
-						createButtons.reverse();
-						display = false;
-					}else{
-						positionX = $(this).position().left + 5;
-						positionY = $(this).position().top + 50;
-						createButtons.expand("bottom", 50, 40);
-						display = true;
-					}
-				});
-			}
+		    button.click(function(e){
+                e.preventDefault();
+		    	subButton =$("#" + $(this).attr("subButton"));
+
+		    	if(display == true){
+		    		createButtons.reverse();
+		    		display = false;
+		    	}else{
+		    		positionX = $(this).position().left + 5;
+		    		positionY = $(this).position().top + 50;
+		    		createButtons.expand("bottom", 50, 40);
+		    		display = true;
+		    	}
+		    });
+
 			
 		},
 		
@@ -48,25 +45,61 @@ createButtons = (function() {
 				},{duration: duration, queue: false});
 				movementX += 150;
 			});
-
-			
 		},
 		
 		reverse: function(){
-			subButton.children(".subButton").each(function(){
-				$(this).fadeOut(duration).animate({
-					"top": positionY,
-					"left": positionX
-				},{duration: duration, queue: false});
-			});
-		}
-		
-			
-	}
+            subButton.children(".subButton").each(function(){
+                $(this).fadeOut(duration).animate({
+                    "top": positionY,
+                    "left": positionX
+                },{duration: duration, queue: false});
+            });
+	    },
+
+        hide: function(){
+            subButton.children(".subButton").each(function(){
+               $(this).hide();
+               display = false;
+            });
+        }
+    }
 })();
 
 $(document).ready(function() {
-	var buttons = [$('#createBuySection'), $('#personalInforSection')];
-	createButtons.init(buttons);
+	createButtons.init($('#createBuySection'));
+    $(".subButton").bind("click",function(){
+        createButtons.hide();
+        createButtons.reverse();
+        var $popBackground = $('#popupWindowBackground');
+        $popBackground.show();
+
+        if($(this).attr("class").indexOf("deliverButton") != -1){
+            $('#friendSection').addClass("friendSectionPopUp");
+            $('.friendFrame').show();
+            $('#friendSection').css({
+               "top": $('.friendFrame').position().top,
+               "left": $('.friendFrame').position().left - 1
+            });
+            $('#friendSection').animate({
+                "height": $(document).height() - 300
+            });
+
+        }else if($(this).attr("class").indexOf("deliverButton") != -1){
+
+        }
+    });
+
+    $('#popupWindowBackground .closeButton').click(function(){
+        var self = $(this);
+        $('#friendSection').animate({
+           "height": "400px"
+        }, function(){
+            self.parent().hide();
+            $(this).removeClass("friendSectionPopUp");
+            $('this').removeAttr("style");
+            $('.friendFrame').hide();
+        });
+
+    });
 	//createButtons.init($('#personalInforSection'));
 });
