@@ -84,6 +84,12 @@ $(document).ready(function() {
                 "height": $(document).height() - 300
             });
 
+            $.ajax({
+                url: "room"
+            }).done(function(html){
+                $('#popupWindowBackground').append(html);
+            });
+
         }else if($(this).attr("class").indexOf("deliverButton") != -1){
 
         }
