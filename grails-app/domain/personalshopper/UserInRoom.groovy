@@ -1,9 +1,10 @@
 package personalshopper
 
 class UserInRoom {
-    static belongsTo = [room:Room]
     SpUser user
+    Room room
     Date joinDate
+
     static constraints = {
     }
 }

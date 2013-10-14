@@ -1,0 +1,73 @@
+#roomCreation {
+    width: 380px;
+    height: 525px;
+    position: absolute;
+    background-color: rgba(123, 104, 138, 0.9);
+    display: none;
+    overflow-y: auto;
+}
+
+#roomCreation .creationLabel{
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    color: white;
+}
+
+#roomCreation table {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#roomCreation hr {
+    width: 80%;
+    color: #BDB76B;
+}
+
+#roomCreation textArea {
+    height: 60px;
+    width: 200px;
+    max-width: 200px;
+}
+
+#roomCreation input[type=text], #roomCreation select {
+    width: 200px;
+}
+
+
+#createRoomButton {
+    background-color: rgba(255,64,64, 0.6);
+    margin-top: 15px;
+}
+
+div.ui-datepicker {
+    font-size: 10px;
+}
+
+#brandLabels, #locationLabel, #categoryLabel {
+    margin-top: 3px;
+    display: inline-block;
+    width: 220px;
+    height: 35px;
+    overflow-y: auto;
+}
+
+#brandLabels > span, #locationLabel > span, #categoryLabel > span {
+    float: left;
+    background-color: rgba(255,236,139, 0.6);
+    font-size: 13px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+#locationLabel > span {
+    background-color: rgba(113,196,113, 0.6);
+}
+
+#categoryLabel > span {
+    background-color: rgba(100,149,237, 0.6);
+}

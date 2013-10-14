@@ -13,7 +13,7 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://jjtemp.com/jjtempc2_personalShopper?useUnicode=yes&characterEncoding=UTF-8"
             username = "jjtempc2"
             password = "koe7POut"

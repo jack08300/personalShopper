@@ -10,8 +10,8 @@ createButtons = (function() {
 		    subButton =$("#"+button.attr("subButton"));
 		    subButton.children(".subButton").each(function(){
 		    	$(this).css({
-		    		"top": button.position().top + button.height()/2,
-		    		"left": button.position().left
+		    		"top": button.offset().top + button.height()/2,
+		    		"left": button.offset().left
 		    	});
 		    });
 
@@ -23,8 +23,8 @@ createButtons = (function() {
 		    		createButtons.reverse();
 		    		display = false;
 		    	}else{
-		    		positionX = $(this).position().left + 5;
-		    		positionY = $(this).position().top + 50;
+		    		positionX = $(this).offset().left + 5;
+		    		positionY = $(this).offset().top + 50;
 		    		createButtons.expand("bottom", 50, 40);
 		    		display = true;
 		    	}
@@ -71,23 +71,30 @@ $(document).ready(function() {
         createButtons.hide();
         createButtons.reverse();
         var $popBackground = $('#popupWindowBackground');
+        var friendSection =  $('#friendSection');
         $popBackground.show();
 
         if($(this).attr("class").indexOf("deliverButton") != -1){
-            $('#friendSection').addClass("friendSectionPopUp");
+            friendSection.addClass("friendSectionPopUp");
             $('.friendFrame').show();
-            $('#friendSection').css({
+            friendSection.css({
                "top": $('.friendFrame').position().top,
                "left": $('.friendFrame').position().left - 1
             });
-            $('#friendSection').animate({
-                "height": $(document).height() - 300
+            friendSection.animate({
+                "height": $(document).height() - 200
             });
 
             $.ajax({
                 url: "room"
             }).done(function(html){
-                $('#popupWindowBackground').append(html);
+                $('#roomCreation').html(html);
+                $('#roomCreation').css({
+                    "top": friendSection.offset().top,
+                    "left": $('.indexBody').offset().left,
+                    "height":  $(document).height() - 200
+                });
+                $('#roomCreation').show();
             });
 
         }else if($(this).attr("class").indexOf("deliverButton") != -1){
@@ -96,16 +103,27 @@ $(document).ready(function() {
     });
 
     $('#popupWindowBackground .closeButton').click(function(){
-        var self = $(this);
-        $('#friendSection').animate({
-           "height": "400px"
-        }, function(){
-            self.parent().hide();
-            $(this).removeClass("friendSectionPopUp");
-            $('this').removeAttr("style");
-            $('.friendFrame').hide();
-        });
-
+        closeCreatePopup();
+//        var self = $(this);
+//        $('#friendSection').animate({
+//           "height": "400px"
+//        }, function(){
+//            self.parent().hide();
+//            $(this).removeClass("friendSectionPopUp");
+//            $('this').removeAttr("style");
+//            $('.friendFrame').hide();
+//        });
     });
 	//createButtons.init($('#personalInforSection'));
 });
+
+function closeCreatePopup(){
+    $('#friendSection').animate({
+        "height": "400px"
+    }, function(){
+        $('#popupWindowBackground').hide();
+        $(this).removeClass("friendSectionPopUp");
+        $('this').removeAttr("style");
+        $('.friendFrame').hide();
+    });
+}

@@ -1,8 +1,54 @@
+@font-face {
+    font-family: caflish;
+    src: url('font/CaflischScriptPro-Regular.otf');
+}
+html {
+    text-align: center;
+}
+body {
+    //background-color: rgba(238,232,170,0.3);
+    margin: 0px;
+}
+.error {
+    color: #FFD700;
+    font-size: 17px;
+    display: none;
+}
+.message {
+
+}
+#personalShopperTitle, #personalShopperFoot {
+    width: 100%;
+    height: 55px;
+    background-color: rgba(154,205,50,0.3);
+    font-size: 60px;
+    line-height: 55px;
+    font-family: caflish;
+}
+#personalShopperFoot{
+    position: absolute;
+    bottom:0px;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: right;
+
+}
+#personalShopperBody {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(56,142,142,0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+
+}
 .indexBody{
-	padding: 10px;
+	//padding: 10px;
 	text-align: center;
 	min-width: 700px;
     min-height: 800px;
+    display: inline-block;
 }
 .button {
 	border: none;
@@ -16,10 +62,15 @@
     -khtml-border-radius: 20px;
     border-radius: 20px;
 }
-.buttonShadow {
+.bottomShadow {
 	-webkit-box-shadow: 0 8px 6px -6px black;
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
+}
+.topShadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 -8px 6px -6px black;
 }
 .sectionTitle{
 	text-align: center;
@@ -33,6 +84,7 @@
 }
 #personalButton{
 	width: 350px;
+    margin-left: 5px;
 	float:left;
 }
 #createBuySection{
@@ -104,7 +156,7 @@
 
 .subButton{
 	cursor: pointer;
-
+    display: none;
 }
 
 .subRoundedCorners{
@@ -118,7 +170,6 @@
 	-webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;
-    display: none;
 }
 
 #popupWindowBackground{
@@ -134,7 +185,7 @@
 
 .closeButton{
     position: absolute;
-    color: red;
+    color: #d866ff;
     font-size: 30px;
     font-weight: bold;
     right: 15px;
