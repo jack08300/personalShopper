@@ -1,0 +1,194 @@
+@font-face {
+    font-family: caflish;
+    src: url('font/CaflischScriptPro-Regular.otf');
+}
+html {
+    text-align: center;
+}
+body {
+    //background-color: rgba(238,232,170,0.3);
+    margin: 0px;
+}
+.error {
+    color: #FFD700;
+    font-size: 17px;
+    display: none;
+}
+.message {
+
+}
+#personalShopperTitle, #personalShopperFoot {
+    width: 100%;
+    height: 55px;
+    background-color: rgba(154,205,50,0.3);
+    font-size: 60px;
+    line-height: 55px;
+    font-family: caflish;
+}
+#personalShopperFoot{
+    position: absolute;
+    bottom:0px;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: right;
+
+}
+#personalShopperBody {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(56,142,142,0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+
+}
+.indexBody{
+	//padding: 10px;
+	text-align: center;
+	min-width: 700px;
+    min-height: 800px;
+    display: inline-block;
+}
+.button {
+	border: none;
+	text-align: center;	
+	cursor: pointer;
+	
+}
+.roundedCorners{
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+}
+.bottomShadow {
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+.topShadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 -8px 6px -6px black;
+}
+.sectionTitle{
+	text-align: center;
+}
+.sectionTitle span.text{
+	font-size: 25px;
+	color: white;
+}
+.close{
+	clear: both;
+}
+#personalButton{
+	width: 350px;
+    margin-left: 5px;
+	float:left;
+}
+#createBuySection{
+	float: left;
+}
+#personalInforSection{
+	float :right;
+}
+#createBuySection .button,
+#personalInforSection .button {
+	width: 150px;
+	height: 70px;
+	border: none;
+	background-color: rgba(123, 104, 138, 0.7);
+}
+#createBuySection .text,
+#personalInforSection .text{
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	line-height: 70px;
+}
+
+#personalInforSection .button {
+	background-color: rgba(24, 116, 205, 0.7);
+}
+
+#friendSection{
+    width:280px;
+    height: 400px;
+    background-color: rgba(125, 158, 192, 0.7);
+    border: 1px solid #C5C1AA;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.friendFrame{
+    width:280px;
+    min-height: 400px;
+    background-color: rgba(125, 158, 192, 0);
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 31px;
+    display: none;
+}
+
+.friendSectionPopUp{
+    position: absolute;
+    z-index:2;
+}
+
+#roomList{
+	width: 90%;
+	background-color: rgba(198,113,113, 0.7);
+	display: inline-block;
+}
+#roomList .roomCurrent .sectionTitle,
+#roomList .roomHistory .sectionTitle {
+	background-color: rgba(0, 0, 0, 0.1);
+	display: inline-block;
+	width:50%;
+	margin-top: 10px;
+}
+
+#roomList .roomHistory .sectionTitle{
+	background-color: rgba(255, 248, 220, 0.2);
+}
+
+.subButton{
+	cursor: pointer;
+    display: none;
+}
+
+.subRoundedCorners{
+	background-color: rgb(255, 248, 220);
+	position: absolute;
+	width: 130px;
+	height: 50px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 50px;
+	-webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+}
+
+#popupWindowBackground{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: rgba(255, 248, 220, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.closeButton{
+    position: absolute;
+    color: #d866ff;
+    font-size: 30px;
+    font-weight: bold;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
