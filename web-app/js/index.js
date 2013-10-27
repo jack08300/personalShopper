@@ -1,4 +1,3 @@
-
 createButtons = (function() {
 	var  positionY
 		,positionX
@@ -70,60 +69,67 @@ $(document).ready(function() {
     $(".subButton").bind("click",function(){
         createButtons.hide();
         createButtons.reverse();
-        var $popBackground = $('#popupWindowBackground');
-        var friendSection =  $('#friendSection');
-        $popBackground.show();
 
         if($(this).attr("class").indexOf("deliverButton") != -1){
-            friendSection.addClass("friendSectionPopUp");
-            $('.friendFrame').show();
-            friendSection.css({
-               "top": $('.friendFrame').position().top,
-               "left": $('.friendFrame').position().left - 1
-            });
-            friendSection.animate({
-                "height": $(document).height() - 200
-            });
-
             $.ajax({
                 url: "room"
             }).done(function(html){
-                $('#roomCreation').html(html);
-                $('#roomCreation').css({
-                    "top": friendSection.offset().top,
-                    "left": $('.indexBody').offset().left,
-                    "height":  $(document).height() - 200
-                });
-                $('#roomCreation').show();
+                popupWindow.contents(html);
+                popupWindow.show();
             });
 
         }else if($(this).attr("class").indexOf("deliverButton") != -1){
 
         }
     });
-
-    $('#popupWindowBackground .closeButton').click(function(){
-        closeCreatePopup();
-//        var self = $(this);
-//        $('#friendSection').animate({
-//           "height": "400px"
-//        }, function(){
-//            self.parent().hide();
-//            $(this).removeClass("friendSectionPopUp");
-//            $('this').removeAttr("style");
-//            $('.friendFrame').hide();
-//        });
-    });
-	//createButtons.init($('#personalInforSection'));
 });
 
-function closeCreatePopup(){
-    $('#friendSection').animate({
-        "height": "400px"
-    }, function(){
-        $('#popupWindowBackground').hide();
-        $(this).removeClass("friendSectionPopUp");
-        $('this').removeAttr("style");
-        $('.friendFrame').hide();
-    });
-}
+(function(){
+    var popupWindow = function() {
+        this.attachEvent();
+    };
+
+    popupWindow.prototype = {
+        self : $('#popupWindow'),
+        content : $('#popContent'),
+
+        attachEvent: function() {
+            var _this = this;
+            $('#popupWindow .closeButton').click(function(){
+                _this.close();
+            });
+        },
+        close : function() {
+            var _this = this;
+            _this.content.fadeOut('fast', function() {
+                _this.content.html("");
+                _this.self.fadeOut('fast');
+            });
+
+        },
+
+        show: function() {
+            var _this = this;
+            _this.centerContent();
+            _this.self.fadeIn('fast', function() {
+                _this.content.fadeIn('fast');
+            });
+        },
+
+        centerContent: function() {
+            this.content.css({
+                "top" : 50,
+                "left": ($(document).width()/2) - (this.content.children('div:first').width()/2)
+            });
+
+        },
+
+        contents: function(html){
+            this.content.html(html);
+            this.centerContent();
+
+        }
+
+    }
+    window.popupWindow = new popupWindow();
+})();

@@ -7,6 +7,7 @@ class SpUser {
 	String username
 	String password
 	String email
+
 	boolean enabled
 	boolean accountExpired
 	boolean accountLocked

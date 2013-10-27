@@ -1,5 +1,6 @@
 
-<g:javascript src="createRoom.js"/>
+
+<div id="roomCreation"   class="roundedCorners bottomShadow">
     <div class="error message" id="roomErrorMessage"></div>
     <table class="createRoomTable">
         <tr>
@@ -86,3 +87,5 @@
         </tr>
 
     </table>
+</div>
+<g:javascript src="createRoom.js"/>

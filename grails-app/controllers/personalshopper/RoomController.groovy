@@ -1,7 +1,6 @@
 package personalshopper
 
 import grails.plugins.springsecurity.Secured
-import grails.converters.JSON
 import org.codehaus.groovy.grails.web.json.JSONObject
 
 @Secured(['ROLE_ADMIN', 'ROLE_USER'])
@@ -25,7 +24,7 @@ class RoomController {
         def duplicateRoom = Room.findByRoomTitleAndCreater(roomTitle, user)
         def result;
         if(!duplicateRoom){
-            def room = new Room(
+            new Room(
                     roomTitle: roomTitle,
                     startDate: new Date(dateStart),
                     endDate: new Date(dateEnd),
@@ -41,8 +40,18 @@ class RoomController {
         }else{
             result = new JSONObject([result: "error", message: "Duplicate Title Name"])
         }
-        println result
         render result
-       // render "${params.callback}(${result as JSON})"
+    }
+
+    def enterRoom(String roomId){
+        def room = Room.findById(roomId);
+        def result
+        if(room != null){
+            render(template: 'room', model: [room: room])
+        }else{
+            result = new JSONObject([result: 'error', message: 'Can\'t find the room'])
+        }
+
+        render result
     }
 }

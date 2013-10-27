@@ -13,7 +13,7 @@ class Room {
     String stuffCategory;
     String note;
     Images images;
-    String status = 'PRIVATE';
+    String status = 'OPEN';
     String comment;
     UserInRoom relatedUser;
     SpUser creater;
