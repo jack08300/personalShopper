@@ -10,10 +10,10 @@ class FriendController {
 
         def myFriend = Friend.find("FROM Friend WHERE (relatedUser = ? OR requestUser = ?) AND status = ? ", [user, user, 'FRIEND'])
 
-        def requestToMe = Friend.find("FROM Friend WHERE relatedUser = ? AND status = ? ", [user, 'REQUESTING'])
+        //def requestToMe = Friend.find("FROM Friend WHERE relatedUser = ? AND status = ? ", [user, 'REQUESTING'])
 
-        def myRequest = Friend.find("FROM Friend WHERE requestUser = ? AND status = ? ", [user, 'REQUESTING'])
+       // def myRequest = Friend.find("FROM Friend WHERE requestUser = ? AND status = ? ", [user, 'REQUESTING'])
 
-        render(template: 'friend', modle: [myFriend: myFriend, requestToMe: requestToMe, myRequest: myRequest])
+        render(template: 'friend', model: [myFriend: myFriend, self: user, page: 'FRIEND'])
     }
 }

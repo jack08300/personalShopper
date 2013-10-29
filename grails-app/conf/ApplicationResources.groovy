@@ -6,6 +6,7 @@ modules = {
     homePage {
         resource url:'css/index.css'
         resource url:'css/createRoom.css'
+        resource url:'css/friend.css'
         resource url:'css/roomCreation/createRoom.css'
         resource url:'css/room.css'
         resource url:'js/index.js'
