@@ -1,10 +1,9 @@
 #roomCreation {
     width: 380px;
-    height: 525px;
     position: absolute;
     background-color: rgba(123, 104, 138, 0.9);
-    display: none;
     overflow-y: auto;
+    padding-bottom:10px;
 }
 
 #roomCreation .creationLabel{

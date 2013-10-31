@@ -123,8 +123,7 @@ $(document).ready(function() {
                         self.displayErrorMessage(data.message);
                     }else if(data.result == "ok"){
                         alert(data.message);
-                        //$('#popupWindowBackground').hide();
-                        closeCreatePopup();
+                        popupWindow.close();
                     }
                 }
             });

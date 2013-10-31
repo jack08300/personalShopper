@@ -18,31 +18,33 @@
 
             </div>
 
-            <div id="personalInforSection" subButton="inforSubButton">
+            <div id="friendSection" subButton="friendSubButton">
                 <div class="button roundedCorners bottomShadow">
-                    <div class="text">My Information</div>
+                    <div class="text">Friends</div>
                 </div>
             </div>
 
             <div class="close"></div>
         </div>
 
-        <div id="friendSection" class="roundedCorners bottomShadow">
+        <div id="activitySection" class="roundedCorners bottomShadow">
             <div class="sectionTitle">
-                <span class="text">FRIENDS</span>
+                <span class="text">Activity</span>
             </div>
-            <div class="listFriend">
+            <hr/>
+            <div class="listActivity">
 
             </div>
         </div>
-        <div class="friendFrame"></div>
         <div class="close"></div>
 
         <div id="roomList" class="roundedCorners bottomShadow">
-            <div class="roomCurrent">
+            <div class="currentRooms">
                 <div class="sectionTitle">
-                    <span class="text">Working Room</span>
+                    <span class="text">Working Room : ${currentRoom.size()}</span>
                 </div>
+                <br/>
+                <g:render template="../room/currentRoom"/>
             </div>
 
             <div class="roomHistory">
@@ -61,8 +63,8 @@
 </div>
 
 
-<div id="popupWindowBackground">
-    <div id="roomCreation"  class="roundedCorners bottomShadow"></div>
+<div id="popupWindow">
+    <div id="popContent"></div>
     <div class="closeButton">X</div>
 </div>
 

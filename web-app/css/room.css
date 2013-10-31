@@ -1,0 +1,15 @@
+#room{
+    width: 480px;
+    height: 500px;
+    background-color: rgba(47, 79, 79, 0.7);
+    color: white;
+}
+
+#room .roomTitle{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#room .detailContent {
+
+}
