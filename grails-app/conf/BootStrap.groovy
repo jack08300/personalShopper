@@ -17,6 +17,14 @@ class BootStrap {
 	//assert SpUser.count() == 1
 	//assert Role.count() == 2
 	//assert SpUserRole.count() == 1
+
+
+//        new SpUser(username: 'Joyce', password: 'koe7POut', email: 'joyce@gmail.com', enabled: true).save(failOnError: true)
+//        new SpUser(username: 'Brandon', password: 'koe7POut', email: 'Brandon@gmail.com', enabled: true).save(failOnError: true)
+//        new SpUser(username: 'Howard', password: 'koe7POut', email: 'Howard@gmail.com', enabled: true).save(failOnError: true)
+//        new SpUser(username: 'Serge', password: 'koe7POut', email: 'Serge@gmail.com', enabled: true).save(failOnError: true)
+//        new SpUser(username: 'Cindy', password: 'koe7POut', email: 'Cindy@gmail.com', enabled: true).save(failOnError: true)
+//        new SpUser(username: 'Jenny', password: 'koe7POut', email: 'Jenny@gmail.com', enabled: true).save(failOnError: true)
     }
     def destroy = {
     }

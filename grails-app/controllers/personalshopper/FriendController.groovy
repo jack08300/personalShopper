@@ -14,6 +14,12 @@ class FriendController {
 
        // def myRequest = Friend.find("FROM Friend WHERE requestUser = ? AND status = ? ", [user, 'REQUESTING'])
 
-        render(template: 'friend', model: [myFriend: myFriend, self: user, page: 'FRIEND'])
+        render(template: 'friend', model: [friendList: myFriend, self: user, page: 'FRIEND'])
+    }
+
+    def searchUser(String searchText) {
+        def userResult = SpUser.findAll("FROM SpUser WHERE email LIKE '%" + searchText + "%@%'")
+
+        render(template: 'friendList', model: [friendList: userResult])
     }
 }

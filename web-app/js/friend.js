@@ -6,14 +6,25 @@
     friendModule.prototype = {
         attachEvent: function() {
             var self = this;
-            $('#friendSection').on('click', function(){
-                $.ajax({
-                   url: 'friend'
-                }).done(function(data){
-                    var template = $(data);
-                    popupWindow.contents(template);
-                    popupWindow.show();
-                });
+
+            $('#friendPage, .title').on('click', function(e){
+                e.preventDefault();
+
+            });
+
+            $('#searchUser').keyup(function(e){
+               if($(this).val().length > 3){
+                    self.searchUser($(this).val());
+               }
+            });
+        },
+
+        searchUser : function(text) {
+            var friendList = $('#friendList');
+            $.ajax({
+                url: 'friend/searchUser?searchText='+text
+            }).done(function(html) {
+                friendList.html(html);
             });
         }
     }

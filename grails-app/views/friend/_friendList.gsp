@@ -1,6 +1,6 @@
 <div id="friendList">
     <g:if test="${page == 'FRIEND'}">
-        <g:each var="friend" in="${myFriend}">
+        <g:each var="friend" in="${friendList}">
             <div class="eachFriend">
                 <g:if test="${friend.relatedUser == self}">
                     <g:set value="${friend.requestUser}" var="theUser" />

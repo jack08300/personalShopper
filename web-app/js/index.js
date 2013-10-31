@@ -82,6 +82,16 @@ $(document).ready(function() {
 
         }
     });
+
+    $('#friendSection').on('click', function(){
+        $.ajax({
+            url: 'friend'
+        }).done(function(data){
+                var template = $(data);
+                popupWindow.contents(template);
+                popupWindow.show();
+            });
+    });
 });
 
 (function(){

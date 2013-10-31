@@ -7,7 +7,7 @@
             Requests
         </span>
         <span class="title">
-            <g:textField name="searchUser" placeholder = "Search User" />
+            <g:textField name="searchUser" id="searchUser" placeholder = "Search User" />
         </span>
     </div>
 
@@ -15,3 +15,4 @@
 
 </div>
 
+<g:javascript src="friend.js"/>

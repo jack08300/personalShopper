@@ -11,7 +11,6 @@ modules = {
         resource url:'css/room.css'
         resource url:'js/index.js'
         resource url:'js/room.js'
-        resource url:'js/friend.js'
         resource url:"http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"
         resource url:"http://code.jquery.com/ui/1.10.3/jquery-ui.js"
     }
