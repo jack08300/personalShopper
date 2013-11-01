@@ -1,10 +1,22 @@
 #friendPage {
     width: 600px;
+    height: 600px;
+    overflow: hidden;
     background-color: rgba(24, 116, 205, 0.7);
 }
 #friendPageTitle{
     margin-top: 8px;
     margin-bottom: 8px;
+}
+#searchUserResult{
+    background-color: #63B8FF;
+    width: 500px;
+    height: 0px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 #friendPageTitle .title {
     color: white;
@@ -17,7 +29,7 @@
 #friendList .eachFriend{
 
 }
-#friendList .eachFriend .userIcon{
+#friendList .eachFriend .userIcon, #friendList .eacUser .userIcon {
     float: left;
     width: 50px;
     height: 50px;
@@ -25,7 +37,11 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-#friendList .eachFriend .userInformation{
+#friendList .eachFriend .userInformation, #friendList .eacUser .userInformation{
     float: left;
     height: 50px;
+}
+
+#friendList .eacUser{
+    margin-top: 5px;
 }
