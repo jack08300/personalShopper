@@ -11,6 +11,10 @@
         </span>
     </div>
 
+    <div id="searchUserResult">
+
+    </div>
+
     <g:render template="friendList" />
 
 </div>

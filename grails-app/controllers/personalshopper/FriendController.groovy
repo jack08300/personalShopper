@@ -18,8 +18,9 @@ class FriendController {
     }
 
     def searchUser(String searchText) {
-        def userResult = SpUser.findAll("FROM SpUser WHERE email LIKE '%" + searchText + "%@%'")
+        def user = springSecurityService.currentUser
+        def userResult = SpUser.findAll("FROM SpUser WHERE email LIKE '%" + searchText + "%@%' AND email != '" + user.email + "'")
 
-        render(template: 'friendList', model: [friendList: userResult])
+        render(template: 'friendList', model: [searchList: userResult, self: user, page: 'SEARCH'])
     }
 }

@@ -23,4 +23,23 @@
             </div>
         </g:each>
     </g:if>
+
+    <g:else>
+        <g:each var="theUser" in="${searchList}">
+            <div class="eacUser">
+                <div class="userIcon">
+                    The Icon
+                </div>
+                <div class="userInformation">
+                    <div class="userName">
+                        ${theUser.username}
+                    </div>
+                    <div class="userEmail">
+                        ${theUser.email}
+                    </div>
+                </div>
+                <div class="close"></div>
+            </div>
+        </g:each>
+    </g:else>
 </div>
