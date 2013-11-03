@@ -27,6 +27,7 @@
 
                }
             });
+
         },
 
         searchUser : function(text) {
