@@ -45,3 +45,15 @@
 #friendList .eacUser{
     margin-top: 5px;
 }
+
+#friendList .requestUserButton{
+    float: right;
+    width: 90px;
+    background-color: rgba(255,64,64, 0.6);
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#friendList .requestSent {
+    background-color: rgba(0,205,0, 0.8);
+}

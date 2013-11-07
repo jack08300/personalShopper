@@ -1,6 +1,7 @@
 package personalshopper
 
 import grails.plugins.springsecurity.Secured
+import org.codehaus.groovy.grails.web.json.JSONObject
 
 @Secured(['ROLE_ADMIN', 'ROLE_USER'])
 class FriendController {
@@ -19,8 +20,43 @@ class FriendController {
 
     def searchUser(String searchText) {
         def user = springSecurityService.currentUser
-        def userResult = SpUser.findAll("FROM SpUser WHERE email LIKE '%" + searchText + "%@%' AND email != '" + user.email + "'")
+
+        def userFriend = Friend.findAll("FROM Friend WHERE (relatedUser = ? OR requestUser = ?)", [user, user])
+
+        String userList = "'" + user.email + "'"
+
+        userFriend.each{ friend->
+            String email
+            if(friend.relatedUser == user.email){
+                email = friend.relatedUser.email
+            }else{
+                email = friend.requestUser.email
+            }
+            userList += ",'" + email + "'"
+        }
+
+        def userResult = SpUser.findAll("FROM SpUser WHERE (email LIKE '%" + searchText + "%@%' OR username LIKE '%" + searchText + "%')" +
+                " AND email NOT IN (" + userList + ")")
 
         render(template: 'friendList', model: [searchList: userResult, self: user, page: 'SEARCH'])
+    }
+
+    def sendRequest(String requestId){
+        def result
+        def user = springSecurityService.currentUser
+        def requestUser = SpUser.get(requestId)
+        def requested  = Friend.find("FROM Friend WHERE (relatedUser = ? AND requestUser = ?) OR" +
+                " (relatedUser = ? AND requestUser = ?)", [user, requestUser, requestUser, user])
+
+        if(requested == null){
+            new Friend(relatedUser: requestUser, requestUser: user, updateDate: new Date()).save(failOnError: true)
+            result = new JSONObject(result: "ok", message: "Added successful")
+        }else{
+            result = new JSONObject(result: "error", message: "Duplicate User Request")
+        }
+
+        render result
+
+
     }
 }
