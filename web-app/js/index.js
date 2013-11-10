@@ -143,3 +143,42 @@ $(document).ready(function() {
     }
     window.popupWindow = new popupWindow();
 })();
+
+(function(){
+    var spinner = function(){
+    };
+
+    spinner.prototype = {
+        data: {
+            image: 'images/spinner.gif',
+            element: $('<div id="spinner"></div>')
+        },
+        displaySpinner: function(elem) {
+            var left = elem.width()/2 - 33;
+            this.data.element.css({
+               left: left
+            });
+            elem.html(this.data.element);
+        },
+
+        adjustHeight: function(elem) {
+            elem.animate({
+                "height" : 85
+            });
+        },
+
+        removeSpinner: function(elem) {
+            elem.find('#spinner').remove();
+        },
+
+        getWidth: function() {
+            return this.element.getWidth();
+        },
+
+        getHeight: function() {
+            return this.element.getHeight();
+        }
+    }
+
+    window.spinner = new spinner();
+})();

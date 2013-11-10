@@ -15,16 +15,17 @@
             });
 
             $('#searchUser').keyup(function(e){
+               var searchUser =  $('#searchUserResult');
                if($(this).val().length > 1){
-                   self.searchUser($(this).val());
                    if(self.data.rolled == false){
-                       self.rolling($('#searchUserResult'));
+                       self.rolling(searchUser);
+                       spinner.displaySpinner(searchUser);
                    }
+                   self.searchUser($(this).val());
                }else{
                    if(self.data.rolled == true){
-                       self.rolling($('#searchUserResult'));
+                       self.rolling(searchUser);
                    }
-
                }
             });
 
