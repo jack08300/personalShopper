@@ -29,12 +29,39 @@
                }
             });
 
+            $('#friendListPage').on('click', function(e){
+
+                if(self.data.rolled == true){
+                    self.rolling($('#searchUserResult'));
+                }
+            });
+
+            $('#requestListPage').on('click', function(e){
+
+                var searchUser =  $('#searchUserResult');
+
+                    if(self.data.rolled == false){
+                        self.rolling(searchUser);
+                        spinner.displaySpinner(searchUser);
+                    }
+                    self.requestList();
+            });
+
         },
 
         searchUser : function(text) {
             var searchResult = $('#searchUserResult');
             $.ajax({
                 url: 'friend/searchUser?searchText='+text
+            }).done(function(html) {
+                searchResult.html(html);
+            });
+        },
+
+        requestList: function(){
+            var searchResult = $('#searchUserResult');
+            $.ajax({
+                url: 'friend/requestList'
             }).done(function(html) {
                 searchResult.html(html);
             });

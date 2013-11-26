@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec8fc4d-303d-4afa-892b-1691d719ec3b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/spinner.gif" afterPath="$PROJECT_DIR$/web-app/images/spinner.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/personalshopper/FriendController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/personalshopper/FriendController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/_friend.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/_friend.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp" afterPath="$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/friend.js" afterPath="$PROJECT_DIR$/web-app/js/friend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/index.css" afterPath="$PROJECT_DIR$/web-app/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/index.js" afterPath="$PROJECT_DIR$/web-app/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/friendList.js" afterPath="$PROJECT_DIR$/web-app/js/friendList.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="personalShopper.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$USER_HOME$/.grails/" />
-    <file path="/Dummy.txt" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1384028825013" ignored="false" />
+    <file path="/Dummy.txt" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385436738338" ignored="false" />
     <file path="/index.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382821450012" ignored="false" />
     <file path="/index.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1384066933983" ignored="false" />
     <file path="/index.css" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1384044521999" ignored="false" />
@@ -23,7 +24,7 @@
     <file path="/RoomController.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382821011312" ignored="false" />
     <file path="/_createRoom.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382821784528" ignored="false" />
     <file path="/createRoom.css" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382818555495" ignored="false" />
-    <file path="/a.dummy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1384041818484" ignored="false" />
+    <file path="/a.dummy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385438221004" ignored="false" />
     <file path="/ApplicationResources.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383430294338" ignored="false" />
     <file path="/_foot.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1380945315602" ignored="false" />
     <file path="/createRoom.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382842203674" ignored="false" />
@@ -35,16 +36,16 @@
     <file path="/_room.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382842717526" ignored="false" />
     <file path="/room.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382842264297" ignored="false" />
     <file path="/room.css" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382824275013" ignored="false" />
-    <file path="/friend.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1384066790122" ignored="false" />
+    <file path="/friend.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385438235959" ignored="false" />
     <file path="/Friend.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1382912113397" ignored="false" />
     <file path="/SpUser.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383273528610" ignored="false" />
-    <file path="/FriendController.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383512990303" ignored="false" />
-    <file path="/_friend.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383268695076" ignored="false" />
+    <file path="/FriendController.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385437454017" ignored="false" />
+    <file path="/_friend.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385437753590" ignored="false" />
     <file path="/friend.css" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383511518562" ignored="false" />
-    <file path="/_friendList.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383511180564" ignored="false" />
+    <file path="/_friendList.gsp" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385438476765" ignored="false" />
     <file path="/Dummy.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383009950144" ignored="false" />
     <file path="/BootStrap.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383091126741" ignored="false" />
-    <file path="/friendList.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383512567255" ignored="false" />
+    <file path="/friendList.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385437772957" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,10 +113,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5346852">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web-app/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="160" column="32" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.6135593">
+                <state line="160" column="32" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -124,7 +125,7 @@
           <file leaf-file-name="friend.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web-app/js/friend.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="39" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
+                <state line="45" column="21" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -133,16 +134,16 @@
           <file leaf-file-name="friendList.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web-app/js/friendList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="50" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+                <state line="14" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FriendController.groovy" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="FriendController.groovy" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/grails-app/controllers/personalshopper/FriendController.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="5" selection-start="1608" selection-end="1608" vertical-scroll-proportion="-30.043478">
+                <state line="46" column="36" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.4852768">
                   <folding />
                 </state>
               </provider>
@@ -151,7 +152,7 @@
           <file leaf-file-name="Friend.groovy" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/grails-app/domain/personalshopper/Friend.groovy">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="19" selection-start="128" selection-end="138" vertical-scroll-proportion="-4.9565215">
+                <state line="6" column="19" selection-start="128" selection-end="138" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -161,37 +162,37 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="_friend.gsp" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friend.gsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="-8.196078">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_friendList.gsp" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="63" column="119" selection-start="2815" selection-end="2815" vertical-scroll-proportion="0.6760049">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-app/css/index.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="46" column="19" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="friend.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web-app/css/friend.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="27" column="0" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_friend.gsp" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friend.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="-5.9607844">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_friendList.gsp" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="34" selection-start="1671" selection-end="1671" vertical-scroll-proportion="-14.529411">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/web-app/css/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="22" selection-start="365" selection-end="365" vertical-scroll-proportion="0.38644066">
                   <folding />
                 </state>
               </provider>
@@ -226,14 +227,14 @@
         <option value="$PROJECT_DIR$/grails-app/domain/personalshopper/SpUser.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
         <option value="$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/friend/_friend.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/friend.css" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/personalshopper/FriendController.groovy" />
-        <option value="$PROJECT_DIR$/web-app/js/friendList.js" />
-        <option value="$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/index.css" />
-        <option value="$PROJECT_DIR$/web-app/js/friend.js" />
         <option value="$PROJECT_DIR$/web-app/js/index.js" />
+        <option value="$PROJECT_DIR$/grails-app/views/friend/_friend.gsp" />
+        <option value="$PROJECT_DIR$/web-app/js/friendList.js" />
+        <option value="$PROJECT_DIR$/web-app/js/friend.js" />
+        <option value="$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/personalshopper/FriendController.groovy" />
       </list>
     </option>
   </component>
@@ -326,12 +327,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -343,13 +344,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:personalShopper">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -362,10 +360,13 @@
       <setting name="launchBrowser" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -374,6 +375,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -402,19 +416,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -540,7 +541,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19319429" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13233724" sideWeight="0.74753016" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13180363" sideWeight="0.74753016" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.80680573" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -628,13 +629,13 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/grails-app/domain/personalshopper/SpUser.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.022041764">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
@@ -666,21 +667,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="59" selection-end="59" vertical-scroll-proportion="0.05801527">
+        <state line="2" column="12" selection-start="59" selection-end="59" vertical-scroll-proportion="0.05801527" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/personalshopper/Friend.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="128" selection-end="138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="19" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp">
+    <entry file="file://$PROJECT_DIR$/web-app/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="34" selection-start="1671" selection-end="1671" vertical-scroll-proportion="-14.529411">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friend.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="-5.9607844">
+        <state line="160" column="32" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -692,47 +701,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/index.css">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friend.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="365" selection-end="365" vertical-scroll-proportion="0.38644066">
+        <state line="22" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="-8.196078">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/personalshopper/Friend.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/friend/_friendList.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="19" selection-start="128" selection-end="138" vertical-scroll-proportion="-4.9565215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/personalshopper/FriendController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="1608" selection-end="1608" vertical-scroll-proportion="-30.043478">
+        <state line="63" column="119" selection-start="2815" selection-end="2815" vertical-scroll-proportion="0.6760049">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/friendList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="50" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/friend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
+        <state line="45" column="21" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/js/index.js">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/personalshopper/FriendController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="32" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.6135593">
+        <state line="46" column="36" selection-start="1723" selection-end="1723" vertical-scroll-proportion="0.4852768">
           <folding />
         </state>
       </provider>

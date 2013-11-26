@@ -41,6 +41,19 @@ class FriendController {
         render(template: 'friendList', model: [searchList: userResult, self: user, page: 'SEARCH'])
     }
 
+    def requestList(){
+        def user = springSecurityService.currentUser
+
+        def request = Friend.findAll("FROM Friend WHERE relatedUser = ? AND status = ?", [user, 'REQUESTING'])
+
+        render(template: 'friendList', model: [requestList: request, self: user, page:'REQUEST'])
+
+    }
+
+    def answerRequest(Boolean answer){
+
+    }
+
     def sendRequest(String requestId){
         def result
         def user = springSecurityService.currentUser

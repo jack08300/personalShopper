@@ -1,9 +1,9 @@
 <div id="friendPage" class="roundedCorners bottomShadow">
     <div id="friendPageTitle">
-        <span class="title">
+        <span class="title" id="friendListPage">
             Friends
         </span>
-        <span class="title">
+        <span class="title" id="requestListPage">
             Requests
         </span>
         <span class="title">

@@ -8,10 +8,11 @@
             var self = this;
             $('.requestUserButton').on('click', function(e){
                 $(this).removeClass("bottomShadow button");
-                $(this).addClass("requestSent")
+                $(this).addClass("requestSent");
                 $(this).text("Request Sent");
                 self.requestUser($(this).attr("userId"));
             });
+
         },
 
         requestUser : function(userId) {
