@@ -27,7 +27,8 @@
 
 # project release file
 /*.war
-.idea/
+*/.idea/workspace.xml
+*/.idea/tasks.xml
 
 # plugin release file
 /*.zip
