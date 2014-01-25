@@ -27,6 +27,7 @@
 
 # project release file
 /*.war
+.idea/
 
 # plugin release file
 /*.zip
@@ -41,4 +42,4 @@
 
 # other
 *.iws
-/.idea/workspace.xml
+
