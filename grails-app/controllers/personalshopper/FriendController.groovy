@@ -50,8 +50,18 @@ class FriendController {
 
     }
 
-    def answerRequest(Boolean answer){
+    def acceptUser(int userId){
+        def user = springSecurityService.currentUser
+        def requestUser = SpUser.get(userId)
 
+        def requesting = Friend.findAll("FROM Friend WHERE relatedUser = ? AND status = ? AND requestUser = ?", [user, 'REQUESTING', requestUser])
+        String result = "error"
+        if(requesting != null){
+            requesting.status = []
+
+            result = "ok"
+        }
+        render result
     }
 
     def sendRequest(String requestId){

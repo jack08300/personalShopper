@@ -63,6 +63,7 @@
             $.ajax({
                 url: 'friend/requestList'
             }).done(function(html) {
+
                 searchResult.html(html);
             });
         },

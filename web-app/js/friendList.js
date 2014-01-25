@@ -6,11 +6,21 @@
     friendListModule.prototype = {
         attachEvent: function(){
             var self = this;
-            $('.requestUserButton').on('click', function(e){
+            $('div.requestUserButton').on('click', function(e){
                 $(this).removeClass("bottomShadow button");
                 $(this).addClass("requestSent");
                 $(this).text("Request Sent");
                 self.requestUser($(this).attr("userId"));
+
+
+            });
+
+            $('div.acceptUserButton').on('click', function(e){
+
+                    $(this).removeClass("bottomShadow button");
+                    $(this).addClass("requestSent");
+                    $(this).text("Accepted");
+                    self.acceptUser($(this).attr("userId"));
             });
 
         },
@@ -20,6 +30,16 @@
                 url: "friend/sendRequest?requestId=" + userId
             }).done(function(result){
                 console.error(result);
+            });
+        },
+
+        acceptUser: function(userId){
+            $.ajax({
+                url: "friend/acceptUser?userId=" + userId
+            }).done(function(result){
+               if(result == 'error'){
+                   alert("Error on Accepting Friend");
+               }
             });
         }
     }

@@ -61,7 +61,7 @@
                                 ${theUser.requestUser.email}
                             </div>
                         </div>
-                        <div class="requestUserButton button roundedCorners bottomShadow" userId='${theUser.requestUser.getId()}'>
+                        <div class="acceptUserButton button roundedCorners bottomShadow" userId='${theUser.requestUser.getId()}'>
                             ACCEPT
                         </div>
                         <div class="close"></div>
