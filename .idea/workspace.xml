@@ -43,7 +43,7 @@
     <file path="/BootStrap.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1383091126741" ignored="false" />
     <file path="/friendList.js" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385518767516" ignored="false" />
     <file path="/BuildConfig.groovy" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1385521870508" ignored="false" />
-    <file path="/.gitignore" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1390623221724" ignored="false" />
+    <file path="/.gitignore" changelist="bec8fc4d-303d-4afa-892b-1691d719ec3b" time="1390623261344" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,7 @@
           <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="0.92316383">
+                <state line="43" column="5" selection-start="539" selection-end="539" vertical-scroll-proportion="0.92316383">
                   <folding />
                 </state>
               </provider>
@@ -772,7 +772,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="7" selection-start="541" selection-end="541" vertical-scroll-proportion="0.92316383">
+        <state line="43" column="5" selection-start="539" selection-end="539" vertical-scroll-proportion="0.92316383">
           <folding />
         </state>
       </provider>
