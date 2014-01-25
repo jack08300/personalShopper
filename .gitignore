@@ -32,6 +32,8 @@
 */.idea/*.xml
 /*.idea/*.xml
 /.idea/workspace.xml
+.idea/workspace.xml
+.idea/*
 
 # plugin release file
 /*.zip
