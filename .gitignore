@@ -41,4 +41,4 @@
 
 # other
 *.iws
-/.idea/*
+.idea/workspace.xml
