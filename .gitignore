@@ -29,6 +29,9 @@
 /*.war
 */.idea/workspace.xml
 */.idea/tasks.xml
+*/.idea/*.xml
+/*.idea/*.xml
+/.idea/workspace.xml
 
 # plugin release file
 /*.zip
